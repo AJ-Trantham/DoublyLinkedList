@@ -1,0 +1,87 @@
+****************
+* Project 3 / DoubleLinkedList
+* CS 221
+* 4/15/2018
+* AJ Trantham
+**************** 
+
+OVERVIEW:
+
+ This is a double linked list implementation of the IndexedUnsortedList interface.
+
+
+INCLUDED FILES:
+
+ Required Files for Project:
+
+ * ListTester.java - Driver Class that tests the list
+ * IUDoubleLinkedList.java - the double linked list itself
+ * DLLNode.java - helper class that defines a multi-directional Node
+ * IndexedUnsortedList.java - given interface
+ * README - this file
+
+
+COMPILING AND RUNNING:
+
+ Give the command for compiling the program, the command
+ for running the program, and any usage instructions the
+ user needs.
+ 
+ These are command-line instructions for a system like onyx.
+ They have nothing to do with Eclipse or any other IDE. They
+ must be specific - assume the user has Java installed, but
+ has no idea how to compile or run a Java program from the
+ command-line.
+ 
+ From the directory containing all source files, compile the
+ driver class (and all dependencies) with the command:
+ $ javac ListTester.java
+
+ Run the compiled class file with the command:
+ $ java ListTester
+ 
+ You can also input command line arguments to modify the output:
+ -a	Prints all tests
+ -s	Just prints the section summaries
+ -m	Just prints the Lists by the ToString method
+ 
+ Run the compiled class file with the command:
+ $ java ListTester <arg1, arg2, arg3>
+
+ Console output will give the results after the program finishes.
+
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+ Explain the main concepts and organization of your program so that
+ the reader can understand how your program works. This is not a repeat
+ of javadoc comments or an exhaustive listing of all methods, but an
+ explanation of the critical algorithms and object interactions that make
+ up the program.
+ 
+ The double linked list uses multi-dimentional nodes which can hold any object.
+ These Nodes are linked to the node after and previous to themselves. The last 
+ Node of the list is a Dummy-Node. This node acts as a backstop. This addtional Node
+ is helpful as it allows some continuity in the creation of the diferent methods. 
+
+ The IUDoubleLinkedList is an implementation of the IndexedUnsortedList interface.
+ Additionally, IUDoubleLinkedList relies on the DLLNode class for the functionality of its Nodes.
+ ListTester is a testing suite and driver class that tests the DoubleLinkedList functionality of 
+ both its ListIterator and its methods.
+ 
+TESTING:
+
+ List tester is a comprehensive testing program that tests the functionality of the 
+ IUDoubleLinkedList. It tests all the posibilites from the methods and the tests the
+ ListIterator at its varying states.
+
+
+DISCUSSION:
+
+ This project was quite challanging. I encountered many problems throughout development.
+ There were many special cases to consider that I missed on the first attempt. Additionally, 
+ building the ListIterator was very difficult. I utilized the debugger to find and solve most 
+ of my errors. This was good as I feel like I can use the debugger much more effectivly now.
+ Also, my understanding of the concept of an iterator and the linked list was greatly enhanced.
+  
+----------------------------------------------------------------------------s
